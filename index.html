@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <section id="navbar">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <img src="https://e7.pngegg.com/pngimages/338/111/png-clipart-nike-nike.png" alt="logo" width="30px" />
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">about us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    help
+                  </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="#">paying problem</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">missing items</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">else</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <!--main-->
+    <main>
+        <!--carousel-->
+        <section>
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://static.nike.com/a/images/w_1920,c_limit/e1b8d7af-a840-44bb-a9e9-99fa38c5d0db/les-meilleures-chaussures-nike-pour-para%C3%AEtre-plus-grand.jpg" class="d-block w-100" alt="naruto" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Nike collection</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.sneakers-actus.fr/wp-content/uploads/2020/01/Nike-Air-Force-1-React-DimSix-White-CD4366-100-1.jpg" class="d-block w-100" alt="tokyo" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Nike collection</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.shgcdn.com/d01ee401-7588-4d4a-b45d-3d0a49cb63c4/-/format/auto/-/preview/3000x3000/-/quality/lighter/" class="d-block w-100" alt="demon" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Nike collection</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+            </div>
+        </section>
+
+        <!--total price-->
+        <section>
+            <h1>total price : <span id="total_price"></span></h1>
+        </section>
+        <!--producte-->
+        <section id="producte">
+            <section id="narutocollection">
+                <div class="naruto">
+
+                    <span class="icon"><i class="far fa-heart"></i> 
+       </span>
+
+                    <img src="https://storage.googleapis.com/sportshowroom.fr/upload/Z26MVyWeVSnMw0r1d15VLijrBVDlsj6noUSB19Vf.jpeg" alt="nike" width="250px" />
+                    <span class="trash"><i class="fas fa-trash-alt"></i></span>
+
+
+                    <div>
+                        <p>NIKE AIR FORCE 1 <span class="prix"> 60</span></p>
+                        <button class="plus">+</button>
+                        <span class="qte">0</span>
+                        <button class="minus">-</button>
+                    </div>
+                </div>
+                <div class="naruto">
+                    <span class="icon"><i class="far fa-heart"></i> 
+        </span>
+                    <img src="https://www.cdiscount.com/pdt2/0/0/1/1/700x700/mp54646001/rw/basket-nikeairjordan1-mid-chaussure-de-sport-aj-1.jpg" alt="nike" width=150px />
+                    <span class="trash"><i class="fas fa-trash-alt"></i></span>
+
+                    <div class="naruto">
+                        <p>NIKE Baskets Nike Air Jordan 1 <span class="prix"> 60</span></p>
+                        <button class="plus">+</button>
+                        <span class="qte">0</span>
+                        <button class="minus">-</button>
+                    </div>
+                </div>
+                <div class="naruto">
+                    <span class="icon"><i class="far fa-heart"></i> 
+      </span>
+                    <img src="https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/fcf0f3c5-0f20-4f73-9e51-dcd8c3ad4e32/chaussure-jordan-1-mid-pour-et-petit-76vnlG.png" alt="naruto" width=250px height="250px" />
+                    <span class="trash"><i class="fas fa-trash-alt"></i></span>
+                    <div class="naruto">
+                        <p>Nike Jordan 1 <span class="prix">60</span></p>
+                        <button class="plus">+</button>
+                        <span class="qte">0</span>
+                        <button class="minus">-</button>
+                    </div>
+                </div>
+                <div class="naruto">
+                    <span class="icon"><i class="far fa-heart"></i> 
+      </span>
+                    <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/f0f7064e-51ab-4350-ac80-efcdb64ac786/chaussure-air-jordan-1-low-pour-ZdMg83.png" alt="naruto" width=150px />
+                    <span class="trash"><i class="fas fa-trash-alt"></i></span>
+                    <div>
+                        <p>Nike Jordan 1 <span class="prix">60</span> </p>
+                        <button class="plus">+</button>
+                        <span class="qte">0</span>
+                        <button class="minus">-</button>
+                    </div>
+            </section>
+            <section id="tokyoghoulcollection">
+                <div class="tokyo">
+                    <span class="icon"><i class="far fa-heart"></i> 
+</span>
+                    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9b183ce9-8f0d-4c0e-b008-fb204086a462/chaussures-air-jordan-1-acclimate-pour-Q6K1Kq.png" alt="white&black" width=250px />
+                    <span class="trash"><i class="fas fa-trash-alt"></i></span>
+                    <div>
+                        <p>Nike Air Jordan 1 <span class="prix">60 </span></p>
+                        <button class="plus">+</button>
+                        <span class="qte">0</span>
+                        <button class="minus">-</button>
+                    </div>
+                </div>
+                <div class="tokyo">
+                    <span class="icon"><i class="far fa-heart"></i> 
+</span>
+                    <img src="https://img01.ztat.net/article/spp-media-p1/b1cb852952e23cc7803fb0d6edd6025f/f82e95c1cb7b49489fe59ab27ff2c78f.jpg?imwidth=762&filter=packshot" alt="nike" width=250px />
+                    <span class="trash"><i class="fas fa-trash-alt"></i></span>
+                    <div class="tokyo">
+                        <p>Nike Jordan 1 <span class="prix">60 </span></p>
+                        <button class="plus">+</button>
+                        <span class="qte">0</span>
+                        <button class="minus">-</button>
+                    </div>
+                </div>
+                <div class="tokyo">
+                    <span class="icon"><i class="far fa-heart"></i> 
+</span>
+                    <img src="https://cdn.shopify.com/s/files/1/0496/4325/8009/products/baskets-air-jordan-1-mid-gym-red-black-white-air-jordan-kikikickz-773220_400x.jpg?v=1644339800" alt="Nike" width=250px />
+                    <span class="trash"><i class="fas fa-trash-alt"></i></span>
+                    <div class="tokyo">
+                        <p>kaneki <span class="prix">60 </span></p>
+                        <button class="plus">+</button>
+                        <span class="qte">0</span>
+                        <button class="minus">-</button>
+                    </div>
+                </div>
+                <div class="tokyo">
+                    <span class="icon"><i class="far fa-heart"></i> 
+</span>
+                    <img src="https://m.media-amazon.com/images/I/51wozSzH0mL._AC_UX395_.jpg" alt="nike" width=250px />
+                    <span class="trash"><i class="fas fa-trash-alt"></i></span>
+                    <div>
+                        <p>Nike Jordan 1 <span class="prix">60 </span></p>
+                        <button class="plus">+</button>
+                        <span class="qte">0</span>
+                        <button class="minus">-</button>
+                    </div>
+
+            </section>
+            <section id="demonslayercollection">
+                <div class="demonslayer">
+                    <span class="icon"><i class="far fa-heart"></i> 
+</span>
+                    <img src="https://cdn.idealo.com/folder/Product/200509/8/200509861/s4_produktbild_gross_3/nike-air-jordan-1-mid-black-554724-091.jpg" alt="demonslayer" width=250px />
+                    <span class="trash"><i class="fas fa-trash-alt"></i></span>
+                    <div>
+                        <p>Nike Jordan <span class="prix">60 </span></p>
+                        <button class="plus">+</button>
+                        <span class="qte">0</span>
+                        <button class="minus">-</button>
+                    </div>
+                </div>
+                <div class="demonslayer">
+                    <span class="icon"><i class="far fa-heart"></i> 
+</span>
+                    <img src="https://m.media-amazon.com/images/I/71mQSVZvVLL._AC_SX500._SX._UX._SY._UY_.jpg" alt="demonslayer" width=250px />
+                    <span class="trash"><i class="fas fa-trash-alt"></i></span>
+                    <div class="demonslayer">
+                        <p>Nike Jordan 1 <span class="prix">60 </span></p>
+                        <button class="plus">+</button>
+                        <span class="qte">0</span>
+                        <button class="minus">-</button>
+                    </div>
+                </div>
+                <div class="demonslayer">
+                    <span class="icon"><i class="far fa-heart"></i> 
+</span>
+                    <img src="https://www.cdiscount.com/pdt2/0/8/1/1/700x700/mp54643081/rw/basket-nikeairjordan1-mid-gs-chaussure-de-sport.jpg" alt="demonslayer" width=150px />
+                    <span class="trash"><i class="fas fa-trash-alt"></i></span>
+                    <div class="demonslayer">
+                        <p>Bike jordan <span class="prix">60£ </span></p>
+                        <button class="plus">+</button>
+                        <span class="qte">0</span>
+                        <button class="minus">-</button>
+                    </div>
+                </div>
+                <div class="demonslayer">
+                    <span class="icon"><i class="far fa-heart"></i> 
+</span>
+                    <img src=https://www.milisium.fr/wp-content/uploads/2020/11/Wethenew-Sneakers-France-Air-Jordan-1-Mid-Multi-Patent-CV5276-001-1_1200x-1.png " alt="demonslayer " width=250px height="250px " />
+                    <span class="trash "><i class="fas fa-trash-alt "></i></span>
+                    <div>
+                        <p>Nike Jordan 1 <span class="prix ">60 </span></p>
+                        <button class="plus ">+</button>
+                        <span class="qte ">0</span>
+                        <button class="minus ">-</button>
+                    </div>
+
+            </section>
+        </section>
+
+
+    </main>
+<footer class="bg-dark text-center text-white ">
+
+  <div class="container p-4 ">
+
+    <section class="mb-4 ">
+    
+      <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "
+        ><i class="fab fa-facebook-f "></i
+      ></a>
+
+     
+      <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "
+        ><i class="fab fa-twitter "></i
+      ></a>
+
+    
+      <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "
+        ><i class="fab fa-google "></i
+      ></a>
+
+      <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "
+        ><i class="fab fa-instagram "></i
+      ></a>
+
+   
+      <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "
+        ><i class="fab fa-linkedin-in "></i
+      ></a>
+
+    
+      <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "
+        ><i class="fab fa-github "></i
+      ></a>
+    </section>
+   
+    <section class=" ">
+      <form action=" ">
+ 
+        <div class="row d-flex justify-content-center ">
+      
+          <div class="col-auto ">
+            <p class="pt-2 ">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+         
+      
+          <div class="col-md-5 col-12 ">
+        
+            <div class="form-outline form-white mb-4 ">
+              <input type="email " id="form5Example21 " class="form-control " />
+              <label class="form-label " for="form5Example21 ">Email address</label>
+            </div>
+          </div>
+          <div class="col-auto ">
+           
+            <button type="submit " class="btn btn-outline-light mb-4 ">
+              Subscribe
+            </button>
+          </div>
+       
+        </div>
+      
+      </form>
+    </section>
+   
+
+  
+    <section class="mb-4 ">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+        eum harum corrupti dicta, aliquam sequi voluptate quas.
+      </p>
+    </section>
+  
+
+
+    <section class=" ">
+
+      <div class="row ">
+      
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+          <h5 class="text-uppercase ">Links</h5>
+
+          <ul class="list-unstyled mb-0 ">
+            <li>
+              <a href="#! " class="text-white ">Link 1</a>
+            </li>
+            <li>
+              <a href="#! " class="text-white ">Link 2</a>
+            </li>
+            <li>
+              <a href="#! " class="text-white ">Link 3</a>
+            </li>
+            <li>
+              <a href="#! " class="text-white ">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+          <h5 class="text-uppercase ">Links</h5>
+
+          <ul class="list-unstyled mb-0 ">
+            <li>
+              <a href="#! " class="text-white ">Link 1</a>
+            </li>
+            <li>
+              <a href="#! " class="text-white ">Link 2</a>
+            </li>
+            <li>
+              <a href="#! " class="text-white ">Link 3</a>
+            </li>
+            <li>
+              <a href="#! " class="text-white ">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+          <h5 class="text-uppercase ">Links</h5>
+
+          <ul class="list-unstyled mb-0 ">
+            <li>
+              <a href="#! " class="text-white ">Link 1</a>
+            </li>
+            <li>
+              <a href="#! " class="text-white ">Link 2</a>
+            </li>
+            <li>
+              <a href="#! " class="text-white ">Link 3</a>
+            </li>
+            <li>
+              <a href="#! " class="text-white ">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+          <h5 class="text-uppercase ">Links</h5>
+
+          <ul class="list-unstyled mb-0 ">
+            <li>
+              <a href="#! " class="text-white ">Link 1</a>
+            </li>
+            <li>
+              <a href="#! " class="text-white ">Link 2</a>
+            </li>
+            <li>
+              <a href="#! " class="text-white ">Link 3</a>
+            </li>
+            <li>
+              <a href="#! " class="text-white ">Link 4</a>
+            </li>
+          </ul>
+        </div>
+    
+      </div>
+   
+    </section>
+  
+  </div>
+
+  <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.2); ">
+    © 2020 Copyright:
+    <a class="text-white " href="https://mdbootstrap.com/ ">MDBootstrap.com</a>
+  </div>
+
+</footer>
+
+    <script src="./script.js "></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js "
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p "
+      crossorigin="anonymous "
+    ></script>
+  </body>
+</html>
